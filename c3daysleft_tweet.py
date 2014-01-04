@@ -8,10 +8,16 @@ OAUTH_FILE="account.oauth"
 NEXTC3_DATE=datetime.date(2014,12,27)
 TWEET_TEXTS=(
 	"Only %s days left until #31C3",
-#	"",
+	"Only %s days left until #31C3",
+	"Only %s days left until #31C3",
+	"Goooood Mooooorning Twietnaaam! On this lovely day, there are only %s days left until #31C3",
+	"What a nice day! And wow, only %s remain until #31C3 starts! #anticipation",
+	"I'm very pleased to remember you, that the #31C3 will be in only %s days!",
+	"Bugged by all those strange people out there? Heads up, #31C3 will start in only %s days!! :)",
+	"%s days remaining!! wooohoooo :D #31C3",
 	)
 TWEET_SPECIAL={
-	356: "So, the first sunday after the #30C3. Is your sleep cycle still as fucked up as mine? We have 356 days to recover until the #31C3 starts :D",
+	356: "So, the first sunday after the #30C3. Is your sleep cycle still as fucked up as mine? We have 356 days to recover until #31C3 starts :D",
 	348: "Day 4 of the #30C3 is already two weeks ago! That leaves us only 355 days left until #31C3 \o/",
 	341: "Oh yea, only b'101010101 days left until #31C3",
 	}
