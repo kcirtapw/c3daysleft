@@ -28,6 +28,7 @@ LOGFILE="c3daysleft_tweet.log"
 def mylog(msg):
     f = open(LOGFILE,"a+")
     f.write("%s: %s\n" % (datetime.datetime.now().strftime("%x %X"),msg) )
+    f.close()
 
 if __name__ == "__main__":
     if MIN_SLEEP and MAX_SLEEP and (MAX_SLEEP > MIN_SLEEP):
