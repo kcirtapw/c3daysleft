@@ -21,8 +21,20 @@ TWEET_SPECIAL={
 	348: "Day 4 of the #30C3 is already two weeks ago! That leaves us only 355 days left until #31C3 \o/",
 	341: "Oh yea, only b'101010101 days left until #31C3",
 	}
+MIN_SLEEP=60*30
+MAX_SLEEP=3600*23
+LOGFILE="c3daysleft_tweet.log"
+
+def mylog(msg):
+    f = open(LOGFILE,"a+")
+    f.write("%s: %s\n" % (datetime.datetime.now().strftime("%x %X"),msg) )
 
 if __name__ == "__main__":
+    if MIN_SLEEP and MAX_SLEEP and (MAX_SLEEP > MIN_SLEEP):
+        from time import sleep
+        sleeptime=random.randint(MIN_SLEEP,MAX_SLEEP)
+        mylog("sleeping for %ss" % sleeptime)
+        sleep(sleeptime)
     oauth=twitter.read_token_file(OAUTH_FILE)
     t=twitter.Twitter(auth=twitter.OAuth(oauth[0], oauth[1], 
 	bot_apikeys.CONSUMER_KEY, bot_apikeys.CONSUMER_SECRET))
@@ -31,4 +43,5 @@ if __name__ == "__main__":
         text = TWEET_SPECIAL[daysleft]
     else:
         text = TWEET_TEXTS[random.randint(0, len(TWEET_TEXTS) - 1)] % daysleft
+    mylog("tweeting: %s" % text)
     t.statuses.update(status=text)
