@@ -4,7 +4,7 @@ import bot_apikeys
 import datetime
 import random
 
-OAUTH_FILE="oauth_c3daysleft"
+OAUTH_FILE="account.oauth"
 NEXTC3_DATE=datetime.date(2014,12,27)
 TWEET_TEXTS=(
 	"Only %s days left until #31C3",
