@@ -7,15 +7,14 @@ import random
 OAUTH_FILE="account.oauth"
 NEXTC3_DATE=datetime.date(2014,12,27)
 TWEET_TEXTS=(
-	"Only %s days left until #31C3",
-	"Only %s days left until #31C3",
-	"Only %s days left until #31C3",
 	"Goooood Mooooorning, Twietnaaam! On this lovely day, there are only %s days left until #31C3",
 	"What a nice day! And wow, only %s days remain until #31C3 starts! #anticipation",
 	"I'm very pleased to remind you that #31C3 will take place in only %s days!",
 	"Bugged by all those strange people out there? Chin up, #31C3 will start in only %s days!! :)",
 	"%s days remaining!! Wooohoooo :D #31C3",
 	)
+for i in range(20):
+	TWEET_TEXTS.append("Only %s days left until #31C3")
 TWEET_SPECIAL={
 	356: "So, the first Sunday after #30C3. Is your sleep cycle still as out of whack as mine? We have 356 days to recover until #31C3 starts :D",
 	348: "Day 4 of #30C3 was two weeks ago! That leaves only 355 days until #31C3 \o/",
