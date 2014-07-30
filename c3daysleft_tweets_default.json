@@ -1,0 +1,12 @@
+{
+    "Goooood Mooooorning, Twietnaaam! On this lovely day, there are only {days_left} days left until #{nextC3}": 5,
+    "What a nice day! And wow, only {days_left} days remain until #{nextC3} starts! #anticipation": 1,
+    "I'm very pleased to remind you that #{nextC3} will take place in only {days_left} days!": 2,
+    "Bugged by all those strange people out there? Chin up, #{nextC3} will start in only {days_left} days!! :)": 2,
+    "Bugged by all those strange people out there? Chin up, #{nextC3} will start in only 0x{days_left:X} days!! :)": 3,
+    "Bugged by all those strange people out there? Chin up, #{nextC3} will start in only b{days_left:b} days!! :)": 1,
+    "{days_left} days remaining!! Wooohoooo :D #{nextC3}": 1,
+    "Only b{days_left:b} days left until #{nextC3}": 2,
+    "Only 0x{days_left:X} days left until #{nextC3}": 2,
+    "Only {days_left} days left until #{nextC3}": 20
+}
