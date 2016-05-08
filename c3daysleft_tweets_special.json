@@ -4,5 +4,16 @@
     "2014-01-20": "Oh yea, only b'101010101 days left until #31C3",
     "2014-07-31": "With {days_left} days left until #31C3, we are running a new version of this bot :>",
     "2014-08-01": "Ohai August, the #31C3 will be in {days_left} days! :D",
-    "2014-08-02": "While waiting the 148 days left until #31C3, you could take a look at this bot and delight others with awesome tweets http://git.io/FWvIag"
+    "2014-08-02": "While waiting the 148 days left until #31C3, you could take a look at this bot and delight others with awesome tweets http://git.io/FWvIag",
+    "2014-11-25": "I'm happy to tell you, ticket order for #31C3 is open! https://tickets.events.ccc.de/ And you only have to wait {days_left} more days until its beginning!",
+    "2014-12-29": "Already two days over on #31C3 and two more awesome days to come! <3",
+    "2014-12-30": "Wish you all another awesome (and sadly last) day on #31C3",
+    "2014-12-31": "Whaaat, #31C3 over already?! :(\nHave a nice way back 'home', only little conference flue and see you in {days_left} days on #32C3!",
+    "2015-11-18": "Oohh, only {days_left} tickets^w days left!! Order your tickets soon https://tickets.events.ccc.de/ ;) #32C3!",
+    "2015-11-29": "4 weeks! Only four weeks left until #32C3 begins!!",
+    "2015-12-28": "I wish you all a great time and three more days at #32C3",
+    "2015-12-29": "Half time at #32C3 - two more great days and nights to go!",
+    "2015-12-30": "Oh noez, already the last day of #32C3, have a lot of fun and an awesome afterparty as usual! :)",
+    "2015-12-31": "Hope you survived the #32C3 and the afterparty well, have a nice way back hope and see you in {days_left} days at #33C3",
+    "2016-04-16": "Yeeaaa, only b{days_left:b} days left until #{nextC3}!"
 }
