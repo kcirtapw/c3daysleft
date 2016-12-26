@@ -7,7 +7,7 @@ import json
 
 TWEETS_DEFAULT_FILE = "c3daysleft_tweets_default.json"
 TWEETS_SPECIAL_FILE = "c3daysleft_tweets_special.json"
-    
+
 OAUTH_FILE = "account.oauth"
 
 SLEEP_MIN = 60*30
@@ -34,12 +34,14 @@ def weighted_random(pairs):
 def get_teweet(date=datetime.date.today(), special_file=TWEETS_SPECIAL_FILE,
                default_file=TWEETS_DEFAULT_FILE):
     s = str(date.today())
-    special = json.load(open(special_file, 'r'))
-    if s in special:
-        return special[s]
-    normal = json.load(open(default_file, 'r'))
-    normal_pairs = [(normal[x], x) for x in normal]
-    return weighted_random(normal_pairs)
+    with open(special_file, 'r') as special_open_file:
+        special = json.load(special_open_file)
+        if s in special:
+            return [special[s], special[s]]
+    with open(default_file, 'r') as default_open_file:
+        normal = json.load(default_open_file)
+        normal_pairs = [(normal[x], x) for x in normal]
+        return weighted_random(normal_pairs)
 
 
 def get_format(date=datetime.date.today(), nextC3date=None):
